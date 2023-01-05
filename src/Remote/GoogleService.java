@@ -27,7 +27,7 @@ public class GoogleService extends UnicastRemoteObject implements IGoogle {
 		return instance;
 	}
 	public boolean checkGoogleUser(String email,String password) {
-		this.getInstance();
+		GoogleService.getInstance();
 		GoogleH.put("German@gmail.com", "german");
 		
 		if(GoogleH.containsKey(email)) {
